@@ -5,7 +5,9 @@ public class Game {
 	int turn=0;
 	int score = 0;
 	void roll(int nbQuilles) {
-		if(score==10 && turn<=2)
+		if(score==10 && turn==1)
+			score=score*2;
+		else if(score==10 && turn<=2)
 			score = score+nbQuilles*2;
 		else
 			score = score+nbQuilles;
